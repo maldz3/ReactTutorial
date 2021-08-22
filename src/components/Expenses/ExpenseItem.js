@@ -5,10 +5,12 @@ import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
     return (
-        <Card className="expense-item">
-            <ExpenseDate date={props.date}/>
-            <ExpenseDeets title={props.title} amount={props.amount}/>
-        </Card>
+        <li>
+            <Card className="expense-item">
+                <ExpenseDate date={props.date}/>
+                <ExpenseDeets title={props.title} amount={props.amount}/>
+            </Card>
+        </li>       
     );
 }
 
